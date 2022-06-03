@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Loucademia</title>
+</head>
+
+<body>
+
+<header>
+	<img alt="logo" src="images/Loucademia_Logotipo.png">
+	<nav>
+		<div>
+			<a href="novoAluno.html">Novo Aluno</a>
+			<a href="pesquisaDeAluno.html">Pesquisa de aluno</a>
+			<a href="controleDeAcesso.html">Controle de acesso</a>
+			<a href="relatoriosDeEntradaSaida.html">Relatórios de Entradas e Saídas</a>
+			<a href="relatoriosDeSituacao.html">Relatório de Situações</a>
+		</div>
+	</nav>
+</header>
+
+		<h1>Pesquisa de aluno</h1>
+
+		<div id="infoMessage">
+			(aqui vai eventual mensagem de sistema confirmando sucesso ou erro)
+		</div>
+		
+		<form>
+			<fieldset>
+			<legend>Parâmetros da Pesquisa</legend>
+			
+			<label for="id">ID</label><br>
+			<input type="text" name="id" id="id"><br>
+			
+			<label for="nome">Nome</label><br>
+			<input type="text" name="nome" id="nome"><br>
+			
+			<label for="rg">RG</label><br>
+			<input type="text" name="rg" id="rg"><br>
+			
+			<label for="telefoneDDD">Telefone</label><br>
+			<input type="tel" name="telefoneDDD" id="telefoneDDD">				
+			<input type="tel" name="telefoneNumero" id="telefoneNumero">
+			</fieldset>
+			
+			<br>
+			<input type="submit" value="Pesquisar">
+		</form>
+		
+		<table>
+			<tr>
+				<th>ID</th>
+				<th>Nome</th>
+				<th>RG</th>
+				<th>E-mail</th>
+				<th>Situação</th>
+				<th>Ações</th>				
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Fulano da Silva</td>
+				<td>111.111.111-11</td>
+				<td>fulano@gmail.com</td>
+				<td>Ativo</td>
+				<td>
+					<input type="button" value="Editar">
+					<input type="button" value="Excluir">					
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Ciclano</td>
+				<td>222.222.222-22</td>
+				<td>ciclano@gmail</td>
+				<td>Suspenso</td>
+				<td>
+					<input type="button" value="Editar">
+					<input type="button" value="Excluir">					
+				</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Beltrano</td>
+				<td>333.333.333-33</td>
+				<td>beltrano@gmail.com</td>
+				<td>Inativo</td>
+				<td>
+					<input type="button" value="Editar">
+					<input type="button" value="Excluir">					
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>
+					<input type="button" value="Editar">
+					<input type="button" value="Excluir">					
+				</td>
+			</tr>
+		</table>
+
+
+</body>
+</html>
