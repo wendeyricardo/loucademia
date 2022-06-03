@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Loucademia</title>
+</head>
+
+<body>
+
+<header>
+	<img alt="logo" src="images/Loucademia_Logotipo.png">
+	<nav>
+		<div>
+			<a href="novoAluno.html">Novo Aluno</a>
+			<a href="pesquisaDeAluno.html">Pesquisa de aluno</a>
+			<a href="controleDeAcesso.html">Controle de acesso</a>
+			<a href="relatoriosDeEntradaSaida.html">Relatórios de Entradas e Saídas</a>
+			<a href="relatoriosDeSituacao.html">Relatório de Situações</a>
+		</div>
+	</nav>
+</header>
+
+		<h1>Relatório de Situações</h1>
+
+		<div id="infoMessage">
+			(aqui vai eventual mensagem de sistema confirmando sucesso ou erro)
+		</div>
+		
+		<br>
+		
+		<form>
+			<fieldset>
+			<legend>Parâmetros da Pesquisa</legend>
+			
+			<label for="situacao">Situação</label><br>
+				<select name="situacao" id="situacao">
+					<option>Ativo</option>
+					<option>Inativo</option>
+					<option>Com pendência</option>					
+				</select>	
+			</fieldset>
+			
+			<br>
+			<input type="submit" value="Gerar relatório">
+		</form>
+		
+		<table>
+			<tr>
+				<th>ID</th>
+				<th>Nome</th>
+				<th>Situação</th>
+				<th>Celular</th>
+				<th>Fixo</th>
+				<th>Ações</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Fulano</td>
+				<td>Ativo</td>
+				<td>(91)99999-9999</td>
+				<td>(91)3456-9999</td>
+				<td>
+					<input type="button" value="Editar">
+				</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Ciclano</td>
+				<td>Ativo</td>
+				<td>(91)99999-9999</td>
+				<td>(91)3456-9999</td>
+				<td>
+					<input type="button" value="Editar">
+				</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Beltrano</td>
+				<td>Ativo</td>
+				<td>(91)99999-9999</td>
+				<td>(91)3456-9999</td>
+				<td>
+					<input type="button" value="Editar">
+				</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>zezinho</td>
+				<td>Ativo</td>
+				<td>(91)99999-9999</td>
+				<td>(91)3456-9999</td>
+				<td>
+					<input type="button" value="Editar">
+				</td>
+			</tr>
+		</table>
+
+</body>
+</html>
